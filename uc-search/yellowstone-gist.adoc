@@ -10,7 +10,7 @@
 
 This interactive Neo4j graph tutorial uncovers a recent ecological phenomenon that has infiltrated the northern half of Yellowstone.
 
-== Introduction
+== Introduction1223
 
 A trophic cascade is an ecological process which starts at the top of the food chain and tumbles all the way down to the bottom.
 A classic example is what happened in the Yellowstone National Park in the United States, when wolves were reintroduced in 1995 after a 70-year hiatus.
@@ -70,7 +70,7 @@ The simplified graph data model below represents how part of the Yellowstone eco
 [source,cypher]
 ----
 // Create :Animal factors (nodes)
-CREATE 	(wolf:Animal {Entity:"Wolves", Group:"Mammal", Factor:"Number of grey wolves", Yellowstone:"More wolves"}),
+CREATE 	(wolf:Animal {Entity:"LARGEWolves", Group:"Mammal", Factor:"Number of grey wolves", Yellowstone:"More wolves"}),
 		(deer:Animal {Entity:"Deers", Group:"Mammal", Factor:["Number of deers", "Deers grazing on open fields"], Yellowstone:"Less deers (density) and deer-grazing on open fields (behaviorial)"}),
 		(beaver:Animal {Entity:"Beaver", Group:"Mammal", Factor:"Number of beaver", Yellowstone:"More beaver"}),
 		(bison:Animal {Entity:"Bisons", Group:"Mammal", Factor:"Number of bisons", Yellowstone:"More bisons"}),
